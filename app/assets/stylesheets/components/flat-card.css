@@ -1,0 +1,42 @@
+.flat-card {
+  /* drop shadow, border radius, padding */
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 8px rgba(0,0,0, .15)
+}
+
+.flat-top {
+  /* light grey background color */
+  background-color: #F8F9FA;
+  padding: 1.5em;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.flat-top-info {
+  display: flex;
+}
+
+.flat-bot {
+  border-top: 1px solid rgba(0,0,0,.3);
+  display: flex;
+  align-items: center;
+  padding: 1em 1em 1em 1.5em;
+  flex-shrink: 1;
+}
+
+.flat-bot > p {
+  margin: 0;
+  padding: 0;
+}
+
+.flat-icon {
+  margin-right: .3em;
+}
+
+.flat-icon-div {
+  margin-right: 2em;
+}

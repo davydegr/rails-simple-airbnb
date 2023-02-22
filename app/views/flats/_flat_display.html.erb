@@ -1,0 +1,18 @@
+<div class="flat-card">
+  <div class="flat-top">
+    <div>
+        <h2><%= flat.name %></h1>
+        <p><%= flat.description %></p>
+    </div>
+
+    <div class="flat-top-info">
+      <div class="flat-icon-div"><i class="fa-solid fa-users flat-icon"></i> <%= flat.number_of_guests %></div>
+      <div class="flat-icon-div"><i class="fa-solid fa-euro-sign flat-icon"></i> <%= flat.price_per_night %></div>
+    </div>
+
+  </div>
+
+  <div class="flat-bot">
+    <%= link_to "More info", flat_path(flat) %>
+  </div>
+</div>

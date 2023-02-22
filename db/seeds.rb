@@ -5,3 +5,23 @@
 #
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
+
+puts '--- Destroying all flats'
+Flat.destroy_all
+
+puts '--- Creating new flats'
+30.times do
+  flat = Flat.new(
+    name: Faker::TvShows::BigBangTheory.character,
+    address: Faker::Address.street_address,
+    number_of_guests: rand(1..10),
+    price_per_night: (rand * 100).round(2),
+    description: Faker::TvShows::BigBangTheory.quote
+  )
+
+  flat.save
+
+  puts "Flat with ID #{flat.id} saved (#{flat.name})"
+end
+
+puts '--- Seed ended'

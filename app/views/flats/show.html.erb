@@ -1,0 +1,51 @@
+<div class="header" style="background-image: url(https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80)">
+
+</div>
+
+<div class="container">
+  <div class="display-flat-grid">
+    <div class="display-flat-main">
+      <div class="display-flat-card">
+        <h1><%= @flat.name %></h1>
+        <p><em><%= @flat.address %></em></p>
+      </div>
+
+      <div class="display-flat-card">
+        <h2>A bit more about this flat...</h2>
+        <p><%= @flat.description %></p>
+      </div>
+
+      <div class="display-flat-card">
+        <h2>Details</h2>
+
+        <div class="flat-top-info">
+          <div class="flat-icon-div"><i class="fa-solid fa-users flat-icon"></i> <%= @flat.number_of_guests %></div>
+          <div class="flat-icon-div"><i class="fa-solid fa-euro-sign flat-icon"></i> <%= @flat.price_per_night %></div>
+        </div>
+      </div>
+
+    </div>
+    <div class="display-flat-actions">
+      <div class="display-flat-card">
+        <h5>Book now!</h3>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">From:</span>
+          <input type="text" class="form-control" placeholder="15/01/2022" aria-label="From" aria-describedby="basic-addon1">
+        </div>
+
+        <div class="input-group mb-3">
+          <span class="input-group-text" id="basic-addon1">To:</span>
+          <input type="text" class="form-control" placeholder="15/01/2022" aria-label="To" aria-describedby="basic-addon1">
+        </div>
+
+        <a href="#" class="btn btn-success w-100">Book now</a>
+      </div>
+
+      <div class="display-flat-card">
+      <h5>Share</h5></div>
+    </div>
+
+  </div>
+
+</div>

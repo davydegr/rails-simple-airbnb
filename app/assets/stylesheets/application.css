@@ -13,3 +13,25 @@
  *= require_tree .
  *= require_self
  */
+
+ @import url("/pages/index_flats");
+ @import url("/components/one_flat_display");
+
+ .container {
+  width: 1200px;
+ }
+
+ .container-sm {
+  width: 720px;
+ }
+
+ .header {
+  height: 20vh;
+  background-color: red;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+ }
+
+ h1 {
+ }

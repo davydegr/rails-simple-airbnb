@@ -1,0 +1,10 @@
+<div class="container">
+  <h1>All our flats (<%= @flats.size %>)</h1>
+
+      <div class="flats-grid">
+            <% @flats.each do |flat| %>
+              <%= render "flats/flat_display", flat: flat %>
+            <% end %>
+      </div>
+
+  </div>
